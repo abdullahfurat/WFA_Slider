@@ -15,6 +15,7 @@ namespace WFA_Slider
 
     {
         Random rnd = new Random();
+        int indeks = 0;
       
         public Form1()
         {
@@ -41,7 +42,8 @@ namespace WFA_Slider
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            pcbImage.Image = imageList.Images[rnd.Next(0, 6)];
+            indeks = rnd.Next(0, 6);
+            pcbImage.Image = imageList.Images[indeks];
         }
 
         private void trackBar_Scroll(object sender, ScrollEventArgs e)
@@ -57,8 +59,35 @@ namespace WFA_Slider
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            pcbImage.Image = imageList.Images[]
+            if (indeks != 0)
+            {
+                pcbImage.Image = imageList.Images[indeks - 1];
+                timer1.Stop();
+            }
+            else
+            { pcbImage.Image = imageList.Images[6];
+                timer1.Stop();
+            }
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            pcbImage.Image = imageList.Images[6];
             timer1.Stop();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (indeks != 6)
+            {
+                pcbImage.Image = imageList.Images[indeks + 1];
+                timer1.Stop();
+            }
+            else
+            {
+                pcbImage.Image = imageList.Images[0];
+                timer1.Stop();
+            }
         }
     }
     }

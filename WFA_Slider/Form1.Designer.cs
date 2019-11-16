@@ -61,10 +61,11 @@
             // trackBar
             // 
             this.trackBar.BackColor = System.Drawing.Color.Transparent;
-            this.trackBar.Location = new System.Drawing.Point(233, 477);
+            this.trackBar.Location = new System.Drawing.Point(311, 587);
+            this.trackBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar.Maximum = 1000;
             this.trackBar.Name = "trackBar";
-            this.trackBar.Size = new System.Drawing.Size(426, 23);
+            this.trackBar.Size = new System.Drawing.Size(568, 28);
             this.trackBar.TabIndex = 9;
             this.trackBar.Text = "metroTrackBar1";
             this.trackBar.Value = 100;
@@ -74,23 +75,26 @@
             // 
             this.btnNext.ActiveControl = null;
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnNext.Location = new System.Drawing.Point(665, 409);
+            this.btnNext.Location = new System.Drawing.Point(887, 503);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(99, 91);
+            this.btnNext.Size = new System.Drawing.Size(132, 112);
             this.btnNext.TabIndex = 4;
             this.btnNext.TileImage = global::WFA_Slider.Properties.Resources.icon_next;
             this.btnNext.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNext.UseCustomBackColor = true;
             this.btnNext.UseSelectable = true;
             this.btnNext.UseTileImage = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnStartStop
             // 
             this.btnStartStop.ActiveControl = null;
             this.btnStartStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnStartStop.Location = new System.Drawing.Point(233, 409);
+            this.btnStartStop.Location = new System.Drawing.Point(311, 503);
+            this.btnStartStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStartStop.Name = "btnStartStop";
-            this.btnStartStop.Size = new System.Drawing.Size(426, 62);
+            this.btnStartStop.Size = new System.Drawing.Size(568, 76);
             this.btnStartStop.TabIndex = 5;
             this.btnStartStop.TileImage = global::WFA_Slider.Properties.Resources.icon_start;
             this.btnStartStop.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,23 +107,26 @@
             // 
             this.btnLast.ActiveControl = null;
             this.btnLast.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnLast.Location = new System.Drawing.Point(770, 409);
+            this.btnLast.Location = new System.Drawing.Point(1027, 503);
+            this.btnLast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(99, 91);
+            this.btnLast.Size = new System.Drawing.Size(132, 112);
             this.btnLast.TabIndex = 6;
             this.btnLast.TileImage = global::WFA_Slider.Properties.Resources.icon_right;
             this.btnLast.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLast.UseCustomBackColor = true;
             this.btnLast.UseSelectable = true;
             this.btnLast.UseTileImage = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnFirst
             // 
             this.btnFirst.ActiveControl = null;
             this.btnFirst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnFirst.Location = new System.Drawing.Point(23, 409);
+            this.btnFirst.Location = new System.Drawing.Point(31, 503);
+            this.btnFirst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(99, 91);
+            this.btnFirst.Size = new System.Drawing.Size(132, 112);
             this.btnFirst.TabIndex = 7;
             this.btnFirst.TileImage = global::WFA_Slider.Properties.Resources.icon_left;
             this.btnFirst.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,9 +139,10 @@
             // 
             this.btnBack.ActiveControl = null;
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnBack.Location = new System.Drawing.Point(128, 409);
+            this.btnBack.Location = new System.Drawing.Point(171, 503);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(99, 91);
+            this.btnBack.Size = new System.Drawing.Size(132, 112);
             this.btnBack.TabIndex = 8;
             this.btnBack.TileImage = global::WFA_Slider.Properties.Resources.icon_back;
             this.btnBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,18 +154,19 @@
             // pcbImage
             // 
             this.pcbImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
-            this.pcbImage.Location = new System.Drawing.Point(23, 63);
+            this.pcbImage.Location = new System.Drawing.Point(31, 78);
+            this.pcbImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcbImage.Name = "pcbImage";
-            this.pcbImage.Size = new System.Drawing.Size(846, 340);
+            this.pcbImage.Size = new System.Drawing.Size(1128, 418);
             this.pcbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbImage.TabIndex = 3;
             this.pcbImage.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 519);
+            this.ClientSize = new System.Drawing.Size(1191, 639);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnStartStop);
             this.Controls.Add(this.btnLast);
@@ -165,7 +174,9 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.pcbImage);
             this.Controls.Add(this.trackBar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Slider";
             ((System.ComponentModel.ISupportInitialize)(this.pcbImage)).EndInit();
             this.ResumeLayout(false);
